@@ -7,7 +7,7 @@ key_cmd = 'mv /etc/apt/sources.list /etc/apt/sources.list.bak'
 try:
     subprocess.run(key_cmd, shell=True, check=True)
 except subprocess.CalledProcessError as e:
-    print("New file created ", e)
+    print("Backup created successfully ", e)
 
 
 
